@@ -1,0 +1,57 @@
+@import './variables.scss';
+
+div.infoSection {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px;
+  // margin-top: $infoSectionOffset;
+  position: absolute;
+  top: 200px;
+  background-color: #fff;
+  border-radius: 15px;
+  z-index: 10;
+
+  @media only screen and (max-width: $tabletBreakPoint) {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  @media only screen and (max-width: $mobileBreakPoint) {
+    top: 130px;
+  }
+  
+
+  div {
+    flex-basis: 25%;
+    padding: 0 25px;
+    margin: 5px 0;
+    @media only screen and (max-width: $tabletBreakPoint) {
+      text-align: center;
+    }
+    h4 {
+      color: $darkGray;
+      font-size: 0.6em;
+      letter-spacing: 1px;
+      font-weight: 500;
+    }
+    p {
+      color: $veryDarkGray;
+      font-weight: 500;
+      font-size: 1.1em;
+      @media only screen and (max-width: $mobileBreakPoint) {
+        font-size: 0.9em;
+      }
+    }
+  }
+  div.middle {
+    border-left: 1px solid lightGray;
+    border-right: 1px solid lightGray;
+    &.second {
+      border-left: none;
+    }
+    @media only screen and (max-width: $tabletBreakPoint) {
+      border: none;
+    }
+  }
+}

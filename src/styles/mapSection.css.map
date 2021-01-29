@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,GAAG,AAAA,WAAW,CAAC;EACb,IAAI,EAAE,CAAC;EACP,KAAK,EAAE,IAAI;EACX,gBAAgB,EAAE,KAAK;CACxB",
+    "sources": [
+        "mapSection.scss",
+        "variables.scss"
+    ],
+    "names": [],
+    "file": "mapSection.css"
+}
