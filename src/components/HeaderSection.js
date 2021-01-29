@@ -24,7 +24,7 @@ const HeaderSection = (props) => {
         <header className="headerSection">
           <h1>IP Address Tracker</h1>
           <form onSubmit={handlesubmit} className="inputForm">
-            <input onChange={handleInput} spellcheck="false" autocorrect="off" type="text" name="ipAddress" id="ipInput" placeholder="Search for any IP address or domain" />
+            <input onChange={handleInput} spellCheck="false" autoCorrect="off" type="text" name="ipAddress" id="ipInput" placeholder="Search for any IP address or domain" />
             <button type="submit"><img src={arrow} alt="submit"/></button>
           </form>
         </header>

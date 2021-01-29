@@ -35,7 +35,9 @@ const MapSection = (props) => {
   const [center, setCenter] = useState()
 
   useEffect(() => {
-    setCenter({lat: props?.ipData?.location?.lat, lng: props?.ipData?.location?.lng})
+    if (props.ipData) {
+      setCenter({lat: props?.ipData?.location?.lat, lng: props?.ipData?.location?.lng})
+    }
   }, [props.ipData])
   // END OF GOOGLE MAPS CONFIG
 
