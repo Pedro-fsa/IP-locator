@@ -19,11 +19,6 @@ const HeaderSection = (props) => {
     })
     .catch(err => console.log(err))
   }
-
-  const HeroPattern = ({ pttrn, children }) =>
-  <div className={pttrn}>
-    {children}
-  </div>
   
   return (
         <header className="headerSection">
